@@ -1,0 +1,62 @@
+@tailwind components;
+@tailwind utilities;
+@import '~antd/dist/antd.css';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+.custom-spinner-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Custom Check Box
+.custom-checkbox {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #d9d9d9;
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  .custom-checkbox-text {
+    color: rgba(0, 0, 0, 0.85);
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    color: #1890ff;
+    border-color: #1890ff;
+
+    .ant-checkbox-inner {
+      border-color: #1890ff;
+    }
+
+    .custom-checkbox-text {
+      color: #1890ff;
+    }
+  }
+}
+
+.custom-checkbox.custom-checkbox-checked {
+  border: 1px solid #1890ff;
+
+  .ant-checkbox-inner {
+    // border-color: #1890ff;
+    // background-color: #1890ff;
+  }
+
+  .custom-checkbox-text {
+    color: #1890ff;
+  }
+}

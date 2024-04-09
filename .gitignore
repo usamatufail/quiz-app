@@ -1,0 +1,12 @@
+# Both
+/*/node_modules
+/*/.env
+
+# Server (Back-End)
+/backend/serviceAccount.json
+/backend/yarn.lock
+
+# Front End
+/client/package-lock.json
+/client/yarn.lock
+/client/.firebase

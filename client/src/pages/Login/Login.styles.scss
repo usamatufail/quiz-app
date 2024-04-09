@@ -1,0 +1,38 @@
+@import '../../styles/mixins';
+
+.login {
+  margin-top: 0rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  padding-bottom: 3rem;
+  @include moreThanTablet() {
+    margin-top: 3rem;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div[autoplay] {
+      width: 50%;
+      @include moreThanTablet() {
+        width: unset;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    &-heading {
+      text-align: center;
+      margin-bottom: 3rem !important;
+    }
+  }
+}

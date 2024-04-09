@@ -1,0 +1,35 @@
+@import '../../styles/mixins';
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 99px);
+  width: 100%;
+  background-color: #fafafa;
+
+  &__tagline {
+    @include moreThanTablet() {
+      max-width: 50%;
+    }
+    text-align: center;
+    margin-bottom: 0px !important;
+  }
+
+  &__animation {
+    width: 250px;
+    @include moreThanTablet() {
+      width: 300px;
+    }
+  }
+
+  &__button {
+    @include moreThanTablet() {
+      width: 15%;
+    }
+    &-primary {
+      width: 100%;
+    }
+  }
+}

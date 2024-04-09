@@ -1,0 +1,27 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "A Quiz App (API) for Toptal Test Project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix frontend"
+  },
+  "author": "Usama Tufail",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "express-async-handler": "^1.2.0",
+    "idrand": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
